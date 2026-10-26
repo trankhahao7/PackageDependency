@@ -1,0 +1,17 @@
+version: 2
+updates:
+  # Cập nhật các thư viện npm hàng tuần
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+    labels:
+      - "security-patch"
+
+  # Cập nhật GitHub Actions hàng tháng
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      
